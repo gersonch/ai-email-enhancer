@@ -1,33 +1,66 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# AI Email Enhancer ✨
 
-## Getting Started
+¿Tus emails necesitan un empujón? Esta extensión te ayuda a redactar mejor, corregir faltas ortográficas, traducir a diferentes idiomas y escribir de forma más clara y profesional — sin perder tiempo.
 
-First, run the development server:
+## Lo que hace
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+Mejora tus borradores corrigiendo faltas ortográficas, mejorando la estructura y el tono. Ya sea que necesites un email formal para tu jefe, uno amigable para un cliente, o simplemente algo más claro y profesional.
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+## Características principales
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+### 📝 Estilos de escritura
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+Elige el tono perfecto para cada situación:
 
-## Making production build
+- **Formal** — Para cuando necesitas profesionalismo extremo
+- **Profesional** — Equilibrio perfecto para el trabajo diario
+- **Amigable** — Cálido y cercano, sin perder seriedad
+- **Casual** — Como le escribirías a un compañero
 
-Run the following:
+### 🧠 Humanización inteligente
 
-```bash
-pnpm build
-# or
-npm run build
-```
+Controla cuánto "humano" suena tu email.
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+- 0% = Textos generados y robóticos
+- 100% = Suenan como si los hubieras escrito tú mismo
 
-## Submit to the webstores
+### 🌍 Traducción y multilingüe
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+Escribe en tu idioma y tradúcelo al instante. Soporta español, inglés, portugués, francés, alemán e italiano.
+
+### ✨ Toques personales
+
+- **Emojis**: Agrega vida y personalidad a tus mensajes
+- **Firma automática**: Saludo y despedida incluidos
+
+### 📏 Control de longitud
+
+Ajusta la extensión máxima según tus necesidades.
+
+## Cómo usarla
+
+1. **Instálala** desde la Chrome Web Store
+2. **Inicia sesión** con tu cuenta (o crea una gratis)
+3. **Escribe** tu email en cualquier campo de texto
+4. **Dale magia** — la extensión lo mejora automáticamente
+
+También puedes configurar todo desde el popup de la extensión:
+
+![Panel de configuración](./assets/popup-view.png)
+
+## Demo
+
+Mira la extensión en acción mejorando emails en tiempo real:
+
+![Demo de uso](./assets/demo-usage.png)
+
+## Requisitos
+
+- Chrome, Edge o Brave (extensión compatible con Manifest V3)
+- Una cuenta (gratis) para autenticar
+
+## Desarrollada con
+
+- [Plasmo](https://docs.plasmo.com/) — Framework para extensiones
+- React + TypeScript
+- Supabase — Autenticación y backend
